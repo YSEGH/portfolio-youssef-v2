@@ -1,0 +1,109 @@
+.banner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: auto;
+  min-height: 100vh;
+  width: 100vw;
+}
+/* Text container */
+.banner .text-container {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 5rem;
+  color: #202020;
+}
+.banner .text-container h1 {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;
+  white-space: wrap;
+}
+.banner .text-container h1:nth-child(1) {
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.banner .text-container h1:nth-child(1) span {
+  font-weight: 600;
+}
+.banner .text-container h1:nth-child(2) {
+  margin-bottom: 1rem;
+  color: rgba(112, 112, 112, 0.1);
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.banner .text-container h1:nth-child(3) {
+  color: #ffdf6c;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 60px;
+}
+.banner .text-container h1:nth-child(3) span {
+  color: #202020;
+}
+.banner .text-container p:nth-child(4) {
+  display: block;
+  font-family: "Spectral", serif;
+  color: #ffdf6c;
+  font-size: 1.3em;
+  font-style: italic;
+  margin-top: 3rem;
+  margin-left: 10rem;
+  position: relative;
+}
+.banner .text-container p:nth-child(4)::before {
+  content: "";
+  background-color: #ffdf6c;
+  height: 1px;
+  width: 8rem;
+  position: absolute;
+  left: -10rem;
+  top: 1rem;
+}
+/* Image container */
+.banner .image-container {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .image-container img {
+  width: 40rem;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+}
+@media screen and (max-width: 800px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner .text-container {
+    height: fit-content;
+    width: 100%;
+    padding-left: 0;
+    padding: 0 3rem;
+  }
+  .banner .image-container {
+    height: fit-content;
+    width: 100%;
+    margin: 6rem 0 3rem 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner .text-container {
+    padding: 0 1rem;
+  }
+  .banner .text-container h1:nth-child(1) {
+    font-size: 20px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+}

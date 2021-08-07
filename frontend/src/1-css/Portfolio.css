@@ -1,0 +1,27 @@
+.portfolio {
+  height: auto;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio h1:nth-child(1) {
+  font-family: "Poppins", sans-serif !important;
+  color: #ffdf6c;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-transform: capitalize;
+}
+.portfolio h1:nth-child(1) span {
+  color: #202020;
+}
+
+.portfolio .item-container {
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
