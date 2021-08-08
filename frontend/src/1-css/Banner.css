@@ -18,7 +18,7 @@
   color: #202020;
 }
 .banner .text-container h1 {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Jost", sans-serif !important;
   margin: 0;
   white-space: wrap;
 }
@@ -31,7 +31,6 @@
   font-weight: 600;
 }
 .banner .text-container h1:nth-child(2) {
-  margin-bottom: 1rem;
   color: rgba(112, 112, 112, 0.1);
   font-weight: 600;
   font-size: 40px;
@@ -40,8 +39,8 @@
 .banner .text-container h1:nth-child(3) {
   color: #ffdf6c;
   font-weight: 600;
-  font-size: 45px;
-  line-height: 60px;
+  font-size: 63px;
+  line-height: 70px;
 }
 .banner .text-container h1:nth-child(3) span {
   color: #202020;
@@ -90,6 +89,12 @@
     padding-left: 0;
     padding: 0 3rem;
   }
+  .banner .text-container h1:nth-child(1) {
+    font-size: 20px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
   .banner .image-container {
     height: fit-content;
     width: 100%;
@@ -101,9 +106,17 @@
     padding: 0 1rem;
   }
   .banner .text-container h1:nth-child(1) {
-    font-size: 20px;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
+    font-size: 18px;
+  }
+  .banner .text-container h1:nth-child(3) {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .banner .text-container p:nth-child(4) {
+    margin-left: 6rem;
+  }
+  .banner .text-container p:nth-child(4)::before {
+    width: 5rem;
+    left: -6rem;
   }
 }

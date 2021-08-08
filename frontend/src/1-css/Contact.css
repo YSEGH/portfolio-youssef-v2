@@ -1,0 +1,85 @@
+.contact {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #3f3f3f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact h1 {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Jost", sans-serif !important;
+  color: #fff !important;
+  margin-bottom: 0;
+}
+.contact h2 {
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Jost", sans-serif !important;
+  color: #fff !important;
+  text-align: center;
+}
+.contact button {
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Jost", sans-serif !important;
+  background-color: transparent;
+  color: #fff !important;
+  height: auto;
+  border: 2px solid #fff;
+  padding: 0.5rem 1rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.contact button:hover {
+  color: #3f3f3f !important;
+  background-color: #fff;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  font-family: "Jost", sans-serif !important;
+  height: 3rem;
+  width: 100vw;
+  background-color: #202020;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer p {
+  font-weight: 200;
+}
+
+@media screen and (max-width: 1050px) {
+}
+@media screen and (max-width: 800px) {
+  .contact h2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact h2 span {
+    margin-bottom: 1rem;
+  }
+  .contact h2 span.dash {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact h1 {
+    font-size: 28px;
+  }
+  .contact h2 span {
+    font-size: 20px;
+  }
+  .contact button {
+    font-size: 20px;
+  }
+}

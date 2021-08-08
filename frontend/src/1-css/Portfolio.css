@@ -1,27 +1,63 @@
 .portfolio {
   height: auto;
-  min-height: 100vh;
   width: 100vw;
   padding: 2rem 5rem;
   display: flex;
   flex-direction: column;
 }
 .portfolio h1:nth-child(1) {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Jost", sans-serif !important;
   color: #ffdf6c;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 63px;
   line-height: 60px;
   text-transform: capitalize;
+  margin-bottom: 0;
 }
 .portfolio h1:nth-child(1) span {
   color: #202020;
 }
-
 .portfolio .item-container {
-  flex: auto;
+  padding: 4rem 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
+}
+.portfolio button {
+  width: fit-content;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Jost", sans-serif !important;
+  background-color: transparent;
+  color: #202020 !important;
+  height: auto;
+  border: 1px solid #202020;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  transition: 0.25s;
+  margin: 3rem auto 0 auto;
+}
+.portfolio button:hover {
+  color: #fff !important;
+  background-color: #202020;
+}
+
+@media screen and (max-width: 1050px) {
+}
+@media screen and (max-width: 800px) {
+  .portfolio {
+    padding: 2rem 3rem;
+  }
+  .portfolio .item-container {
+    padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .portfolio {
+    padding: 2rem 1rem;
+  }
+  .portfolio h1:nth-child(1) {
+    font-size: 45px;
+  }
 }

@@ -14,6 +14,7 @@ export default function Portfolio() {
         <Item />
         <Item />
       </div>
+      <button>Voir plus</button>
     </div>
   );
 }

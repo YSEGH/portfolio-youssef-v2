@@ -1,0 +1,46 @@
+.about {
+  height: auto;
+  width: 100vw;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+.about h1 {
+  font-family: "Jost", sans-serif !important;
+  color: #ffdf6c;
+  font-weight: 600;
+  font-size: 63px;
+  line-height: 60px;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-family: "Jost", sans-serif !important;
+  font-weight: 300;
+  font-size: 20px;
+  color: #202020;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1050px) {
+}
+@media screen and (max-width: 800px) {
+  .about {
+    padding: 2rem 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about {
+    padding: 2rem 1rem;
+    margin-bottom: 3rem;
+  }
+  .about h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .about p {
+    font-size: 18px;
+  }
+}
