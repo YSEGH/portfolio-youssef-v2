@@ -10,13 +10,16 @@ export default function Banner() {
         </h1>
         <h1>Bonjour.</h1>
         <h1>
-          Développeur web front-end <br />
+          Développeur web <br />
           <span>basé à Nantes.</span>
         </h1>
         <p>Amateur de nouvelle technologie doté d’une curiosité insatiable.</p>
       </div>
       <div className="image-container">
-        <img src="/images/portfolio_svg.png" alt="seghrouchni youssef" />
+        <img
+          src="/static-files/images/portfolio_svg.png"
+          alt="seghrouchni youssef"
+        />
       </div>
     </div>
   );

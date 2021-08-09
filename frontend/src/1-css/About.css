@@ -1,46 +1,125 @@
 .about {
   height: auto;
   width: 100vw;
-  padding: 2rem 5rem;
+  padding: 5rem 5rem 7.5rem 5rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
+  margin-bottom: 21rem;
+  background-color: #3f3f3f;
+  position: relative;
 }
 .about h1 {
   font-family: "Jost", sans-serif !important;
-  color: #ffdf6c;
+  color: #fff;
   font-weight: 600;
-  font-size: 63px;
-  line-height: 60px;
-  text-transform: capitalize;
-  margin-bottom: 1rem;
+  font-size: 35px;
+  line-height: 40px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
-
+.about h1 span {
+  font-weight: 300;
+}
 .about p {
   font-family: "Jost", sans-serif !important;
   font-weight: 300;
   font-size: 20px;
-  color: #202020;
-  text-transform: capitalize;
+  color: #fff;
+  text-transform: none;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.about .details-table {
+  height: auto;
+  min-height: 20rem;
+  width: fit-content;
+  max-width: 80vw;
+  border-radius: 12px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 85%;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+.about .details-table .part {
+  height: 100%;
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about .details-table .part:nth-child(1) {
+  border-right: 1px solid rgba(131, 131, 131, 0.1);
+}
+.about .details-table .part h2 {
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Jost", sans-serif !important;
+}
+.about .details-table .part p {
+  width: 100% !important;
+  color: #202020 !important;
+  margin-bottom: 1rem;
+}
+.about .details-table .part svg {
+  color: #ffdf6c;
 }
 
 @media screen and (max-width: 1050px) {
 }
 @media screen and (max-width: 800px) {
   .about {
-    padding: 2rem 3rem;
+    margin-top: 5rem;
+    padding: 5rem 1rem 7.5rem 1rem;
+    margin-bottom: 39rem;
+  }
+  .about h1 {
+    width: 90%;
+  }
+  .about p {
+    width: 90%;
+  }
+  .about .details-table {
+    top: 90%;
+    flex-direction: column;
+  }
+  .about .details-table .part {
+    width: 100%;
+  }
+  .about .details-table .part:nth-child(1) {
+    border-right: none;
+    border-bottom: 1px solid rgba(131, 131, 131, 0.1);
   }
 }
 @media screen and (max-width: 500px) {
   .about {
-    padding: 2rem 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 42rem;
   }
   .about h1 {
-    font-size: 45px;
-    line-height: 50px;
+    width: 100%;
   }
   .about p {
-    font-size: 18px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about {
+    margin-bottom: 47rem;
+  }
+  .about .details-table {
+    max-width: 90vw;
+  }
+  .about p {
+    width: 100%;
   }
 }

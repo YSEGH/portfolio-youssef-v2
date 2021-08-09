@@ -6,3 +6,6 @@
   display: flex;
   justify-content: space-around;
 }
+.networks-container a {
+  text-decoration: none;
+}

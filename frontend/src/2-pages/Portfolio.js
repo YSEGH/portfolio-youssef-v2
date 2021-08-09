@@ -1,6 +1,7 @@
 import React from "react";
 import "../1-css/Portfolio.css";
 import Item from "../3-components/Item";
+import data from "../data";
 
 export default function Portfolio() {
   return (
@@ -10,11 +11,12 @@ export default function Portfolio() {
         <span>projets.</span>
       </h1>
       <div className="item-container">
-        <Item />
-        <Item />
-        <Item />
+        {data.map((item, i) => (
+          <Item item={item} key={i} />
+        ))}
       </div>
-      <button>Voir plus</button>
+      {/*       <button>Voir plus</button>
+       */}
     </div>
   );
 }

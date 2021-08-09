@@ -12,7 +12,7 @@
   z-index: 100;
 }
 .form-contact.active {
-  animation: showForm 1.25s forwards;
+  animation: showForm 0.75s forwards;
 }
 .form-contact.hidden {
   animation: hiddenForm 0.75s forwards;
@@ -22,12 +22,10 @@
   0% {
     transform: translateY(-100%);
   }
-  40% {
+  70% {
     transform: translateY(2.5%);
   }
-  70% {
-    transform: translateY(-2.5%);
-  }
+
   100% {
     transform: translateY(0);
   }
@@ -36,10 +34,7 @@
   0% {
     transform: translateY(0);
   }
-  60% {
-    transform: translateY(-2.5%);
-  }
-  80% {
+  70% {
     transform: translateY(2.5%);
   }
   100% {
@@ -49,23 +44,37 @@
 .form-contact .form {
   background-color: #fff;
   height: fit-content;
-  width: fit-content;
+  width: 40rem;
   max-width: 95vw;
-  padding: 3rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   border-radius: 5px;
   position: relative;
+  padding: 3rem;
+}
+.form-contact .form .error-handler {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.form-contact .form .error-handler span {
+  font-family: "Jost", sans-serif !important;
+  color: red;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 .form-contact .form .close-icon {
   position: absolute;
   top: 1rem;
   right: 1rem;
   transition: 0.25s;
+}
+.form-contact .form .close-icon path {
+  pointer-events: none;
 }
 .form-contact .form .close-icon:hover {
   cursor: pointer;
@@ -80,58 +89,101 @@
   line-height: 40px;
   text-transform: capitalize;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 .form-contact .form .form-group {
-  width: 20rem;
+  width: fit-content;
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 1rem 0 0 0;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.form-contact .form .form-group.textarea {
+  width: 100%;
 }
 .form-contact .form .form-group label,
 .form-contact .form .form-group input,
 .form-contact .form .form-group textarea {
   color: #202020;
   font-family: "Jost", sans-serif !important;
-  width: 100%;
+  width: 15rem;
   outline: none;
+  border-radius: 4px;
 }
 .form-contact .form .form-group label {
   margin-bottom: 0.25rem;
 }
 .form-contact .form .form-group input {
   padding: 0.5rem;
-  height: 2.5rem;
-  border: 1px solid rgba(32, 32, 32, 0.2);
+  height: 3rem;
+  border: 1px solid rgba(32, 32, 32, 0.1);
+  font-size: 14px;
 }
-.form-contact .form .form-group textarea {
+.form-contact .form .form-group.textarea {
+  width: 100%;
+}
+.form-contact .form .form-group.textarea label {
+  width: 32rem;
+  max-width: 100%;
+}
+.form-contact .form .form-group.textarea textarea {
+  width: 32rem;
+  max-width: 100%;
   padding: 0.5rem;
   height: 7rem;
-  border: 1px solid rgba(32, 32, 32, 0.2);
+  border: 1px solid rgba(32, 32, 32, 0.1);
+  font-size: 14px;
 }
 .form-contact .form .form-group input::placeholder,
 .form-contact .form .form-group textarea::placeholder {
   color: rgba(32, 32, 32, 0.2);
 }
 .form-contact .form button {
-  width: 20rem;
+  width: 32rem;
+  max-width: 100%;
   font-size: 25px;
   font-weight: 300;
   font-family: "Jost", sans-serif !important;
   background-color: transparent;
-  color: #202020 !important;
+  color: #3f3f3f !important;
   height: auto;
-  border: 1px solid rgb(32, 32, 32);
+  border: 1px solid #3f3f3f;
   padding: 0.5rem 2rem;
   margin: 2rem auto 0 auto;
   cursor: pointer;
   transition: 0.25s;
+
+  border-radius: 4px;
 }
 
 .form-contact .form button:hover {
   color: #fff !important;
-  background-color: #202020;
+  background-color: #3f3f3f;
+}
+@media screen and (max-width: 800px) {
+  .form-contact .form {
+    flex-direction: column;
+    padding: 4rem 1.5rem;
+  }
+  .form-contact .form .form-group {
+    width: 32rem;
+    max-width: 100%;
+  }
+  .form-contact .form .form-group label,
+  .form-contact .form .form-group input,
+  .form-contact .form .form-group textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form-contact .form {
+    height: 100vh;
+    max-width: none;
+    width: 100vw;
+    border-radius: 0;
+  }
 }

@@ -1,12 +1,13 @@
 .contact {
   position: relative;
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
   background-color: #3f3f3f;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 7.5rem 0;
 }
 .contact h1 {
   font-size: 50px;
@@ -34,6 +35,7 @@
   margin-top: 3rem;
   cursor: pointer;
   transition: 0.25s;
+  border-radius: 4px;
 }
 .contact button:hover {
   color: #3f3f3f !important;
