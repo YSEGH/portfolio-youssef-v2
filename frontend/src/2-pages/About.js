@@ -9,15 +9,14 @@ export default function About() {
         Hey, c'est Youssef. <span>Enchanté.</span>
       </h1>
       <p>
-        Je suis un jeune développeur qui s'est découvert une passion pour le
-        développement web sur le tard. J'ai étudié le developpement front-end
-        chez <span>Openclassroom </span>
+        Jeune développeur qui s'est découvert une passion pour le développement
+        web sur le tard. J'ai étudié le developpement front-end chez{" "}
+        <span>Openclassroom </span>
         en 2019. Ma curiosité m'a ensuite amené à me tourner vers le
         développement back-end à travers une formation MERN stack chez
-        <span> Eduforma</span>. <br />
-        Amoureux du code propre, d'interfaces simples et épurées, je souhaite
-        mettre à profit mes compétences sur des projets intéressants et
-        stimulants.
+        <span> Eduforma</span>. Amoureux du code propre, d'interfaces simples et
+        épurées, je souhaite mettre à profit mes compétences sur des projets
+        intéressants et stimulants.
       </p>
       <div className="details-table">
         <div className="langages part">
@@ -27,7 +26,7 @@ export default function About() {
             <span>Front-end : HTML, CSS, Javascript, React.</span>
           </p>
           <p>
-            <span>Back-end : Node, MongoDB, Express.</span>
+            <span>Back-end : Node, MongoDB, MySQL, Express.</span>
           </p>
           <p>
             <span>Autre : Bootstrap, Redux.</span>

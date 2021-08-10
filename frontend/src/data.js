@@ -7,11 +7,11 @@ const data = [
     img: "/static-files/projets/gr.jpg",
   },
   {
-    url: "http://sofia-portfolio-v2.herokuapp.com/#/a-propos",
+    url: "http://sofia-portfolio-v2.herokuapp.com/#/",
     title: "2SAP",
     description:
       "Création d'un portfolio pour la mise en avant de projets architecturaux.",
-    img: "/static-files/projets/p1.jpg",
+    img: "/static-files/projets/2sap.jpg",
   },
 ];
 

@@ -8,4 +8,9 @@
 }
 .networks-container a {
   text-decoration: none;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.networks-container a:hover {
+  transform: scale(1.1);
 }

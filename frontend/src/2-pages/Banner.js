@@ -17,7 +17,7 @@ export default function Banner() {
       </div>
       <div className="image-container">
         <img
-          src="/static-files/images/portfolio_svg.png"
+          src="/static-files/images/tete-bannier.jpg"
           alt="seghrouchni youssef"
         />
       </div>

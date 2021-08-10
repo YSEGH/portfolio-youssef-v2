@@ -1,10 +1,11 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import "../1-css/FormContact.css";
 import { MdClose } from "react-icons/md";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { LoadingSVG } from "./LoadingSpinner";
 
 const validationSchema = yup.object({
   lastname: yup.string().required("Merci de saisir votre nom."),
@@ -47,11 +48,11 @@ const useYupValidationResolver = (validationSchema) =>
   );
 
 export default function FormContact() {
+  const [loading, setLoading] = useState(false);
   const resolver = useYupValidationResolver(validationSchema);
   const {
     register,
     handleSubmit,
-    watch,
     reset,
     formState: { errors },
   } = useForm({ resolver });
@@ -74,11 +75,14 @@ export default function FormContact() {
 
   const sendEmail = async (formData) => {
     try {
+      setLoading(true);
       const { data } = await axios.post("/api/mail", formData);
       toast.success(data.message);
       hideForm({}, true);
       reset({});
+      setLoading(false);
     } catch (error) {
+      setLoading(false);
       toast.error(error.response.data.message);
     }
   };
@@ -113,7 +117,9 @@ export default function FormContact() {
           <label>Message</label>
           <textarea type="text" {...register("message")} />
         </div>
-        <button>Envoyer</button>
+        <button disabled={loading ? true : false}>
+          {loading ? <LoadingSVG /> : "Valider"}
+        </button>
         <div className="error-handler">
           <span>{errors.lastname && errors.lastname.message}</span>
           <span>{errors.email && errors.email.message}</span>

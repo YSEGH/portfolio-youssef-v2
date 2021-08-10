@@ -57,7 +57,9 @@
   justify-content: center;
 }
 .footer p {
-  font-weight: 200;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1050px) {

@@ -20,7 +20,7 @@ export default function Contact() {
       </h2>
       <button onClick={() => displayForm()}>On embauche !</button>
       <div className="footer">
-        <p> ©2020 YS Development web.</p>
+        <p> ©2021 YS Developpement web.</p>
       </div>
     </div>
   );
