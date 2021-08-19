@@ -10,7 +10,7 @@ export default function About() {
       </h1>
       <p>
         Jeune développeur qui s'est découvert une passion pour le développement
-        web sur le tard. J'ai étudié le developpement front-end chez{" "}
+        web sur le tard. J'ai étudié le développement front-end chez{" "}
         <span>Openclassroom </span>
         en 2019. Ma curiosité m'a ensuite amené à me tourner vers le
         développement back-end à travers une formation MERN stack chez
@@ -37,7 +37,8 @@ export default function About() {
           <h2>Boîte à outils</h2>
           <p>
             <span>
-              Outils : Visual Studio Code, Github, Terminal, Webpack, Heroku.
+              Outils : Visual Studio Code, Github, Terminal, Wordpress, Webpack,
+              Heroku.
             </span>
           </p>
           <p>

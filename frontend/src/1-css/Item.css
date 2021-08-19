@@ -37,6 +37,10 @@
   margin-bottom: 0.25rem;
   letter-spacing: 1px;
 }
+.item .text-container h1 span {
+  font-family: "Jost", sans-serif !important;
+  font-weight: 200 !important;
+}
 .item .text-container p {
   font-family: "Jost", sans-serif !important;
   color: rgba(112, 112, 112, 0.4) !important;
@@ -50,6 +54,9 @@
  */
 }
 .item:hover .text-container h1 {
+  color: #ffdf6c !important;
+}
+.item:hover .text-container h1 span {
   color: #ffdf6c !important;
 }
 .item:hover .text-container p {
