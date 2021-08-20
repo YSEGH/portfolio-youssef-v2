@@ -118,7 +118,7 @@ export default function FormContact() {
           <textarea type="text" {...register("message")} />
         </div>
         <button disabled={loading ? true : false}>
-          {loading ? <LoadingSVG /> : "Envoyer !"}
+          {loading ? <LoadingSVG /> : "Envoyer"}
         </button>
         <div className="error-handler">
           <span>{errors.lastname && errors.lastname.message}</span>
