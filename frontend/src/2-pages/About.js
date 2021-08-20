@@ -21,7 +21,7 @@ export default function About() {
       <div className="details-table">
         <div className="langages part">
           <AiOutlineCode size={60} />
-          <h2>Languages</h2>
+          <h2>Langages</h2>
           <p>
             <span>Front-end : HTML, CSS, Javascript, React.</span>
           </p>
