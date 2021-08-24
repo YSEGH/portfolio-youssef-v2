@@ -17,6 +17,7 @@ const data = [
   {
     url: "http://minimale-creation.com/",
     title: "Minimale Création",
+    statut: "En cours",
     description:
       "Création d'un site e-commerce de vente d'affiches murales au design minimaliste.",
     img: "/static-files/projets/mc.jpg",
