@@ -15,11 +15,11 @@ const data = [
     img: "/static-files/projets/2sap.jpg",
   },
   {
-    url: "http://minimale-creation.com/",
-    title: "Minimale Création",
+    url: "http://monesquisse.com/",
+    title: "MONESQUISSE.COM",
     statut: "En cours",
     description:
-      "Création d'un site e-commerce de vente d'affiches murales au design minimaliste.",
+      "Création d'un site e-commerce de vente d'affiches murales représentant des esquisses au design minimaliste.",
     img: "/static-files/projets/mc.jpg",
   },
 ];
