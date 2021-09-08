@@ -16,7 +16,7 @@ const data = [
   },
   {
     url: "http://monesquisse.com/",
-    title: "MONESQUISSE.COM",
+    title: "MONESQUISSE",
     statut: "En cours",
     description:
       "Création d'un site e-commerce de vente d'affiches murales représentant des esquisses au design minimaliste.",
