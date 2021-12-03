@@ -28,7 +28,7 @@
   margin-bottom: 3rem;
 }
 .banner .text-container h1:nth-child(1) span {
-  font-weight: 600;
+  font-weight: 500;
 }
 .banner .text-container h1:nth-child(2) {
   color: rgba(112, 112, 112, 0.1);

@@ -13,7 +13,7 @@ export default function About() {
         web sur le tard. J'ai étudié le développement front-end chez{" "}
         <span>Openclassroom </span>
         en 2019. Ma curiosité m'a ensuite amené à me tourner vers le
-        développement back-end à travers une formation MERN stack chez
+        développement MERN Stack chez
         <span> Eduforma</span>. Amoureux du code propre, d'interfaces simples et
         épurées, je souhaite mettre à profit mes compétences sur des projets
         intéressants et stimulants.
