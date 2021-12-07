@@ -26,10 +26,13 @@ export default function About() {
             <span>Front-end : HTML, CSS, Javascript, React.</span>
           </p>
           <p>
-            <span>Back-end : Node, MongoDB, MySQL, Express.</span>
+            <span>Back-end : Node.</span>
           </p>
           <p>
-            <span>Autre : Bootstrap, Redux.</span>
+            <span>Base de données : MongoDB, MySQL.</span>
+          </p>
+          <p>
+            <span>Autre : Express, Redux.</span>
           </p>
         </div>
         <div className="utils part">
