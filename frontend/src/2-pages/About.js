@@ -21,7 +21,7 @@ export default function About() {
       <div className="details-table">
         <div className="langages part">
           <AiOutlineCode size={60} />
-          <h2>Stack technique</h2>
+          <h2>Stack Technique</h2>
           <p>
             <span>Front-end : HTML, CSS, Javascript, React.</span>
           </p>
@@ -29,7 +29,7 @@ export default function About() {
             <span>Back-end : Node, MongoDB, MySQL.</span>
           </p>
           <p>
-            <span>Wordpress, Webpack.</span>
+            <span>Autre : Wordpress, Webpack.</span>
           </p>
         </div>
         <div className="utils part">
