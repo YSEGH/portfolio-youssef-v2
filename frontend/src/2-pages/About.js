@@ -21,28 +21,22 @@ export default function About() {
       <div className="details-table">
         <div className="langages part">
           <AiOutlineCode size={60} />
-          <h2>Langages</h2>
+          <h2>Stack technique</h2>
           <p>
             <span>Front-end : HTML, CSS, Javascript, React.</span>
           </p>
           <p>
-            <span>Back-end : Node.</span>
+            <span>Back-end : Node, MongoDB, MySQL.</span>
           </p>
           <p>
-            <span>Base de données : MongoDB, MySQL.</span>
-          </p>
-          <p>
-            <span>Autre : Express, Redux.</span>
+            <span>Wordpress, Webpack.</span>
           </p>
         </div>
         <div className="utils part">
           <AiOutlineTool size={60} />
           <h2>Boîte à outils</h2>
           <p>
-            <span>
-              Outils : Visual Studio Code, Github, Terminal, Wordpress, Webpack,
-              Heroku.
-            </span>
+            <span>Outils : Visual Studio Code, Github, Terminal, Heroku.</span>
           </p>
           <p>
             <span>Autre : Photoshop, AdobeXD.</span>
