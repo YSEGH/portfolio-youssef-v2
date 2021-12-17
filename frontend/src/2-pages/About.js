@@ -23,13 +23,13 @@ export default function About() {
           <AiOutlineCode size={60} />
           <h2>Stack Technique</h2>
           <p>
-            <span>Front-end : HTML, CSS, Javascript, React.</span>
+            <span>Front-end : HTML, CSS, Javascript, React, Wordpress.</span>
           </p>
           <p>
-            <span>Back-end : Node, MongoDB, MySQL.</span>
+            <span>Back-end : Node, PHP, Symfony MongoDB, MySQL.</span>
           </p>
           <p>
-            <span>Autre : Wordpress, Webpack.</span>
+            <span>Autre :Webpack, Redux, Babel.</span>
           </p>
         </div>
         <div className="utils part">
