@@ -19,8 +19,6 @@ const __dirname = path.resolve();
 
 app.use("/static-files", express.static(path.join(__dirname, "/static-files")));
 
-app.use(express.static(path.join(__dirname, "/frontend/dist")));
-
 app.use(
   "/js",
   (req, res, next) => {
@@ -43,6 +41,8 @@ app.use(
   },
   express.static(path.join(__dirname, "/frontend/dist/css"))
 );
+
+app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "/frontend/dist/index.html"));

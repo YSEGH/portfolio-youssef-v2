@@ -9,9 +9,9 @@ export default function About() {
         Hey, c'est Youssef. <span>Enchanté.</span>
       </h1>
       <p>
-        Développeur de 27 ans qui s'est découvert une passion pour le Web. J'ai
-        étudié le développement front-end chez
-        <span>Openclassroom </span>
+        Développeur de 27 ans passionné par le Web. J'ai étudié le développement
+        front-end chez
+        <span> Openclassroom </span>
         en 2019. Ma curiosité m'a ensuite amené à me tourner vers le
         développement MERN Stack chez
         <span> Eduforma</span>. Amoureux du code propre, d'interfaces simples et
